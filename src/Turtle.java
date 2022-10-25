@@ -29,6 +29,42 @@ public class Turtle {
 		this.actColor = c;
 	}
 	
+	
+	public void drawHouse(Color c, int startPointX, int startPointY) {
+		this.jumpTo(startPointX, startPointY);
+		this.setColor(c);
+		this.rotate(270);
+		this.go(20);
+		this.rotate(45);
+		this.go(20);
+		this.rotate(90);
+		this.go(20);
+		this.rotate(135);
+		this.go(28);
+		this.rotate(215);
+		this.go(35);
+		this.rotate(145);
+		this.go(30);
+		this.rotate(145);
+		this.go(35);
+		this.rotate(125);
+		this.go(20);
+		
+	}
+	
+	public void drawRectangle(Color c, int startPointX, int startPointY) {
+		this.jumpTo(startPointX, startPointY);
+		this.setColor(c);
+		this.go(20);
+		this.rotate(90);
+		this.go(20);
+		this.rotate(90);
+		this.go(20);
+		this.rotate(90);
+		this.go(20);
+		this.rotate(90);
+	}
+	
 	/**Setzt die Figur an die angebene Startposition.
 	 * 
 	 * Alte Positionsangaben werden geloescht und die aktuelle Position gesetzt. 

@@ -1,5 +1,6 @@
 import javax.swing.JFrame;
 
+import java.awt.Color;
 import java.awt.Graphics;
 import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
@@ -39,16 +40,29 @@ public class TurtleApp extends JFrame implements KeyListener{
 		 * 
 		 * z.B. myTurtle.setStartpoint(100, 100);
 		 */
+		myTurtle.setStartpoint(0,0);
+		myTurtle.drawHouse(Color.green, 125, 100);	
+		
 
+		myTurtle.drawRectangle(Color.green, 100, 100);
+		myTurtle.drawRectangle(Color.blue, 200, 100);
+		myTurtle.drawRectangle(Color.black, 100, 200);
+		myTurtle.drawRectangle(Color.red,200, 200);
+	
+		
+		
+		/*	
+		myTurtle.setColor(Color.green);
 		myTurtle.setStartpoint(100,100);
 		myTurtle.rotate(270);
 		myTurtle.go(20);
 		myTurtle.rotate(90);
 		myTurtle.go(20);
 		myTurtle.rotate(90);
-		myTurtle.go(20);
+		myTurtle.go(20);;
 		myTurtle.rotate(90);
 		myTurtle.go(20);
+		*/
 	}
 	
 	public static void main(String[] args) {
